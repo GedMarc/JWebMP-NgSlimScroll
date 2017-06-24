@@ -13,8 +13,8 @@ import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
  */
 enum NgSlimScrollReferencePool implements ReferencePool
 {
-    NgSlimScrollReference(new JavascriptReference("SlimScroll", 1.1, "bower_components/ng-slim-scroll/ng-slim-scroll.js"),
-            new CSSReference("SlimScroll", 1.1, "bower_components/ng-slim-scroll/ng-slim-scroll.css"));
+    NgSlimScrollReference(new JavascriptReference("NgSlimScroll", 1.1, "bower_components/ng-slim-scroll/ng-slim-scroll.js"),
+            new CSSReference("NgSlimScroll", 1.1, "bower_components/ng-slim-scroll/ng-slim-scroll.css"));
     /**
      * Any sub data
      */
