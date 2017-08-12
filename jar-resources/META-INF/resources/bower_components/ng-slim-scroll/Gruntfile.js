@@ -6,7 +6,7 @@ module.exports = function (grunt) {
                     mangle: true
                 },
                 src: ['ng-slim-scroll.js'],
-                dest: 'ng-slim-scroll.min.js'    
+                dest: 'ng-slim-scroll.min.js'
             }
         },
         less: {
@@ -15,7 +15,7 @@ module.exports = function (grunt) {
                     compress: true
                 },
                 src: ['ng-slim-scroll.less'],
-                dest: 'ng-slim-scroll.css'    
+                dest: 'ng-slim-scroll.css'
             }
         }
     });

@@ -11,19 +11,19 @@ import za.co.mmagon.jwebswing.base.angular.modules.AngularModuleBase;
 class NgSlimScrollModule extends AngularModuleBase
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /*
-     * Constructs a new NgSlimScrollModule
-     */
-    public NgSlimScrollModule()
-    {
-        super("ngSlimScroll");
-    }
+	/*
+	 * Constructs a new NgSlimScrollModule
+	 */
+	public NgSlimScrollModule()
+	{
+		super("ngSlimScroll");
+	}
 
-    @Override
-    public String renderFunction()
-    {
-        return null;
-    }
+	@Override
+	public String renderFunction()
+	{
+		return null;
+	}
 }
