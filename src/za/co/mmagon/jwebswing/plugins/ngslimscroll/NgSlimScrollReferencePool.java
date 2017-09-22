@@ -25,19 +25,20 @@ enum NgSlimScrollReferencePool implements ReferencePool
 	/**
 	 * A new AngularSlimScrollReferencePool
 	 */
-	private NgSlimScrollReferencePool()
+	NgSlimScrollReferencePool()
 	{
 
 	}
+
 	/**
 	 * A new AngularSlimScrollReferencePool with data
 	 */
-	private NgSlimScrollReferencePool(String data)
+	NgSlimScrollReferencePool(String data)
 	{
 
 	}
-
-	private NgSlimScrollReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	
+	NgSlimScrollReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 		if (this.javaScriptReference != null)
