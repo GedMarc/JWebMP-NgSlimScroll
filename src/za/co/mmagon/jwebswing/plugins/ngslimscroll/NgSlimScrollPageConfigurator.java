@@ -39,7 +39,7 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 
 	public static void applyToComponent(ComponentHierarchyBase component)
 	{
-		getComponent().addAttribute("data-slim-scroll", null);
+		component.addAttribute("data-slim-scroll", null);
 	}
 
 	@Override

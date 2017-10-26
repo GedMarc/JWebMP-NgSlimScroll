@@ -30,8 +30,8 @@ public class NgSlimScroll
 	 */
 	public static void applySlimScroll(ComponentHierarchyBase component, NgSlimScrollOptions options)
 	{
-		getComponent().addAttribute("data-slim-scroll", null);
-		getComponent().addAttribute("data-options", options.toString());
+		component.addAttribute("data-slim-scroll", null);
+		component.addAttribute("data-options", options.toString());
 	}
 
 	/**
@@ -41,6 +41,6 @@ public class NgSlimScroll
 	 */
 	public static void applySlimScroll(ComponentHierarchyBase component)
 	{
-		getComponent().addAttribute("data-slim-scroll", null);
+		component.addAttribute("data-slim-scroll", null);
 	}
 }
