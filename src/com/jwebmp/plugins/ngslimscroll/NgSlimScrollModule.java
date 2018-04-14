@@ -1,6 +1,6 @@
-package za.co.mmagon.jwebswing.plugins.ngslimscroll;
+package com.jwebmp.plugins.ngslimscroll;
 
-import za.co.mmagon.jwebswing.base.angular.modules.AngularModuleBase;
+import com.jwebmp.base.angular.modules.AngularModuleBase;
 
 /**
  * The module getting loaded into angular
@@ -8,7 +8,8 @@ import za.co.mmagon.jwebswing.base.angular.modules.AngularModuleBase;
  * @author Marc Magon
  * @since 08 Jun 2017
  */
-class NgSlimScrollModule extends AngularModuleBase
+class NgSlimScrollModule
+		extends AngularModuleBase
 {
 
 	private static final long serialVersionUID = 1L;

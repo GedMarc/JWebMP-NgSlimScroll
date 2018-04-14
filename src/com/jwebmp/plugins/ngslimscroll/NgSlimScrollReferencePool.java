@@ -1,9 +1,9 @@
-package za.co.mmagon.jwebswing.plugins.ngslimscroll;
+package com.jwebmp.plugins.ngslimscroll;
 
-import za.co.mmagon.jwebswing.base.references.CSSReference;
-import za.co.mmagon.jwebswing.base.references.JavascriptReference;
-import za.co.mmagon.jwebswing.base.servlets.enumarations.RequirementsPriority;
-import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
+import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.base.references.JavascriptReference;
+import com.jwebmp.base.servlets.enumarations.RequirementsPriority;
+import com.jwebmp.base.servlets.interfaces.ReferencePool;
 
 /**
  * References for angular
