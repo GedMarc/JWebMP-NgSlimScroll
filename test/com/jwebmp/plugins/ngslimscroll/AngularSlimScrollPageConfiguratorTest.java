@@ -1,6 +1,5 @@
 package com.jwebmp.plugins.ngslimscroll;
 
-import com.jwebmp.BaseTestClass;
 import com.jwebmp.Page;
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +7,7 @@ import org.junit.jupiter.api.Test;
  * @author Marc Magon
  */
 public class AngularSlimScrollPageConfiguratorTest
-		extends BaseTestClass
+
 {
 
 	public AngularSlimScrollPageConfiguratorTest()
@@ -18,7 +17,7 @@ public class AngularSlimScrollPageConfiguratorTest
 	@Test
 	public void testSomeMethod()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		System.out.println(p.toString(0));
 	}
 
