@@ -25,7 +25,8 @@ import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-public class NgSlimScrollOptions extends JavaScriptPart
+public class NgSlimScrollOptions
+		extends JavaScriptPart
 {
 
 	private static final long serialVersionUID = 1L;
@@ -33,7 +34,8 @@ public class NgSlimScrollOptions extends JavaScriptPart
 	@Override
 	public String toString()
 	{
-		return super.toString().replaceAll("\\s*\\n\\s*", "");
+		return super.toString()
+		            .replaceAll("\\s*\\n\\s*", "");
 	}
 
 }
