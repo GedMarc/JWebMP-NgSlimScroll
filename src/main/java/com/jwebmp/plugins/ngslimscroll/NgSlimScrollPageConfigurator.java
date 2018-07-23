@@ -18,11 +18,11 @@
 package com.jwebmp.plugins.ngslimscroll;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.base.ComponentHierarchyBase;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * @author Marc Magon
@@ -40,12 +40,10 @@ import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 		pluginIconUrl = "bower_components/bootstrap/bootstrapicon.jpg",
 		pluginIconImageUrl = "bower_components/bootstrap/bootstraplogo.jpg",
 		pluginOriginalHomepage = "https://github.com/ytlabs/ng-slim-scroll",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/NgSlimScroll.jar/download") class NgSlimScrollPageConfigurator
-		extends PageConfigurator
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/NgSlimScroll.jar/download")
+public class NgSlimScrollPageConfigurator
+		implements IPageConfigurator
 {
-
-	private static final long serialVersionUID = 1L;
-
 	/*
 	 * Constructs a new NgSlimScrollPageConfigurator
 	 */
@@ -54,6 +52,7 @@ import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 		//Nothing needed
 	}
 
+	@SuppressWarnings("unused")
 	public static void applyToComponent(ComponentHierarchyBase component)
 	{
 		component.addAttribute("data-slim-scroll", null);
@@ -71,12 +70,7 @@ import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 			    .addJavaScriptReference(NgSlimScrollReferencePool.NgSlimScrollReference.getJavaScriptReference());
 			page.getBody()
 			    .addCssReference(NgSlimScrollReferencePool.NgSlimScrollReference.getCssReference());
-
-			page.getAngular()
-			    .getAngularModules()
-			    .add(new NgSlimScrollModule());
 		}
-
 		return page;
 	}
 }
