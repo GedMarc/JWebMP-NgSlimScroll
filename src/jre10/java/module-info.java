@@ -13,5 +13,5 @@ module com.jwebmp.plugins.ngslimscroll {
 	requires java.logging;
 
 	provides IPageConfigurator with NgSlimScrollPageConfigurator;
-
+	opens com.jwebmp.plugins.ngslimscroll to com.fasterxml.jackson.databind,com.jwebmp.core;
 }
