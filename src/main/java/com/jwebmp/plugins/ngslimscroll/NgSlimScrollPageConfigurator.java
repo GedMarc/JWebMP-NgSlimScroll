@@ -46,12 +46,42 @@ import javax.validation.constraints.NotNull;
 public class NgSlimScrollPageConfigurator
 		implements IPageConfigurator
 {
+	/**
+	 * If this configurator is enabled
+	 */
+	private static boolean enabled = true;
+
 	/*
 	 * Constructs a new NgSlimScrollPageConfigurator
 	 */
 	public NgSlimScrollPageConfigurator()
 	{
 		//Nothing needed
+	}
+
+	/**
+	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static boolean isEnabled()
+	{
+		return NgSlimScrollPageConfigurator.enabled;
+	}
+
+	/**
+	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @param mustEnable
+	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static void setEnabled(boolean mustEnable)
+	{
+		NgSlimScrollPageConfigurator.enabled = mustEnable;
 	}
 
 	@SuppressWarnings("unused")
@@ -75,5 +105,11 @@ public class NgSlimScrollPageConfigurator
 			    .addCssReference(NgSlimScrollReferencePool.NgSlimScrollReference.getCssReference());
 		}
 		return page;
+	}
+
+	@Override
+	public boolean enabled()
+	{
+		return NgSlimScrollPageConfigurator.enabled;
 	}
 }
