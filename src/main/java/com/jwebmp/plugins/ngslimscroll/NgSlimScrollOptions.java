@@ -25,10 +25,13 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-public class NgSlimScrollOptions
-		extends JavaScriptPart
+public class NgSlimScrollOptions<J extends NgSlimScrollOptions<J>>
+		extends JavaScriptPart<J>
 {
 
+	/**
+	 * Field serialVersionUID
+	 */
 	private static final long serialVersionUID = 1L;
 
 	@Override

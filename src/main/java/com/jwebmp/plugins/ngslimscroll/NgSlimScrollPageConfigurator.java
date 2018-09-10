@@ -90,20 +90,39 @@ public class NgSlimScrollPageConfigurator
 		component.addAttribute("data-slim-scroll", null);
 	}
 
+	/**
+	 * Implements the slim scroll using angular on a given component
+	 *
+	 * @param component
+	 * @param options
+	 */
+	public static void applySlimScroll(ComponentHierarchyBase component, NgSlimScrollOptions options)
+	{
+		component.addAttribute("data-slim-scroll", null);
+		component.addAttribute("data-options", options.toString());
+	}
+
+	/**
+	 * Removes slim scroll from a given component
+	 *
+	 * @param component
+	 */
+	public static void applySlimScroll(ComponentHierarchyBase component)
+	{
+		component.addAttribute("data-slim-scroll", null);
+	}
+
 	@NotNull
 	@Override
 	public Page configure(Page page)
 	{
-		if (!page.isConfigured())
-		{
-			JQueryPageConfigurator.setRequired(true);
-			AngularPageConfigurator.setRequired(true);
+		JQueryPageConfigurator.setRequired(true);
+		AngularPageConfigurator.setRequired(true);
 
-			page.getBody()
-			    .addJavaScriptReference(NgSlimScrollReferencePool.NgSlimScrollReference.getJavaScriptReference());
-			page.getBody()
-			    .addCssReference(NgSlimScrollReferencePool.NgSlimScrollReference.getCssReference());
-		}
+		page.getBody()
+		    .addJavaScriptReference(NgSlimScrollReferencePool.NgSlimScrollReference.getJavaScriptReference());
+		page.getBody()
+		    .addCssReference(NgSlimScrollReferencePool.NgSlimScrollReference.getCssReference());
 		return page;
 	}
 
