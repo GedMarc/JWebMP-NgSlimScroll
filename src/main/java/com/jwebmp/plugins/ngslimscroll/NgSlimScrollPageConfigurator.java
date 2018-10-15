@@ -37,14 +37,14 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "scrolling, ui,web ui, framework",
 		pluginSubtitle = "Slim scroll is a replacement of default scrollbar provided by browsers on Windows. This library lets you design the scroll-bar by using simple css properties. It is created using javascript and css.",
 		pluginSourceUrl = "https://github.com/kamlekar/slim-scroll",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-NgSlimScroll/wiki",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-NgSlimScroll",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-NgSlimScroll/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-NgSlimScroll",
 		pluginIconUrl = "bower_components/bootstrap/bootstrapicon.jpg",
 		pluginIconImageUrl = "bower_components/bootstrap/bootstraplogo.jpg",
 		pluginOriginalHomepage = "https://github.com/ytlabs/ng-slim-scroll",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/NgSlimScroll.jar/download")
 public class NgSlimScrollPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<NgSlimScrollPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
