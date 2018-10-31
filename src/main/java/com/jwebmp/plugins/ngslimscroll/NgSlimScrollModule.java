@@ -17,7 +17,7 @@ public class NgSlimScrollModule
 	/**
 	 * Field serialVersionUID
 	 */
-	private static final long serialVersionUID = 1L;
+
 
 	/*
 	 * Constructs a new NgSlimScrollModule

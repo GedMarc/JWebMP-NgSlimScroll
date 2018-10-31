@@ -32,7 +32,7 @@ public class NgSlimScrollOptions<J extends NgSlimScrollOptions<J>>
 	/**
 	 * Field serialVersionUID
 	 */
-	private static final long serialVersionUID = 1L;
+
 
 	@Override
 	public String toString()
