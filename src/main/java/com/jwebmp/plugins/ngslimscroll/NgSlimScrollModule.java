@@ -32,4 +32,16 @@ public class NgSlimScrollModule
 	{
 		return null;
 	}
+
+
+	/**
+	 * If this page configurator is enabled
+	 *
+	 * @return if the configuration must run
+	 */
+	@Override
+	public boolean enabled()
+	{
+		return NgSlimScrollPageConfigurator.isEnabled();
+	}
 }
