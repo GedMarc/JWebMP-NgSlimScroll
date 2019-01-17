@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * @author Marc Magon
+ * @author GedMarc
  */
 public class AngularSlimScrollPageConfiguratorTest
 

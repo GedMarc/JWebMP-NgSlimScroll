@@ -5,7 +5,7 @@ import com.jwebmp.core.base.angular.modules.AngularModuleBase;
 /**
  * The module getting loaded into angular
  *
- * @author Marc Magon
+ * @author GedMarc
  * @since 08 Jun 2017
  */
 public class NgSlimScrollModule
