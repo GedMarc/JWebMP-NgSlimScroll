@@ -65,8 +65,8 @@ angular.module('ngSlimScroll', [])
                                 values.scrollPosition = options.fixedHeight
                                     ? (options.fixedHeight / values.height * 100)
                                     : (values.scrollbarHeight < options.minHeight
-                                        ? options.minHeight / values.height * 100
-                                        : values.position);
+                                    ? options.minHeight / values.height * 100
+                                    : values.position);
 
                                 values.remainder = 100 - values.scrollPosition;
                                 values.x = (values.scrollHeight - values.height) * ((values.scrollPosition - values.position) / (100 - values.position));
