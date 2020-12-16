@@ -14,8 +14,8 @@ import com.jwebmp.core.base.servlets.interfaces.ReferencePool;
 enum NgSlimScrollReferencePool
 		implements ReferencePool
 {
-	NgSlimScrollReference(new JavascriptReference("NgSlimScroll", 1.1, "bower_components/ng-slim-scroll/ng-slim-scroll.js"),
-	                      new CSSReference("NgSlimScroll", 1.1, "bower_components/ng-slim-scroll/ng-slim-scroll.css"));
+	NgSlimScrollReference(new JavascriptReference("NgSlimScroll", 1.38, "bower_components/ng-slim-scroll/ng-slim-scroll.js"),
+	                      new CSSReference("NgSlimScroll", 1.38, "bower_components/ng-slim-scroll/ng-slim-scroll.css"));
 	/**
 	 * Any sub data
 	 */

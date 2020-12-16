@@ -20,7 +20,9 @@ package com.jwebmp.plugins.ngslimscroll;
 import com.jwebmp.core.Page;
 import com.jwebmp.core.base.ComponentHierarchyBase;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 import com.jwebmp.core.services.IPageConfigurator;
 
@@ -39,10 +41,15 @@ import jakarta.validation.constraints.NotNull;
 		pluginSourceUrl = "https://github.com/kamlekar/slim-scroll",
 		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-NgSlimScroll/wiki",
 		pluginGitUrl = "https://github.com/GedMarc/JWebMP-NgSlimScroll",
-		pluginIconUrl = "bower_components/bootstrap/bootstrapicon.jpg",
-		pluginIconImageUrl = "bower_components/bootstrap/bootstraplogo.jpg",
+		pluginIconUrl = "",
+		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://github.com/ytlabs/ng-slim-scroll",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/NgSlimScroll.jar/download")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.angular/jwebmp-ng-slim-scroll",
+		pluginGroupId = "com.jwebmp.plugins.angular",
+		pluginArtifactId = "jwebmp-ng-slim-scroll",
+		pluginModuleName = "com.jwebmp.plugins.ngslimscroll",
+		pluginStatus = PluginStatus.Released
+)
 public class NgSlimScrollPageConfigurator
 		implements IPageConfigurator<NgSlimScrollPageConfigurator>
 {
@@ -85,9 +92,9 @@ public class NgSlimScrollPageConfigurator
 	}
 
 	@SuppressWarnings("unused")
-	public static void applyToComponent(ComponentHierarchyBase component)
+	public static void applyToComponent(IComponentHierarchyBase<?,?> component)
 	{
-		component.addAttribute("data-slim-scroll", null);
+		component.asAttributeBase().addAttribute("data-slim-scroll", null);
 	}
 
 	/**
@@ -96,10 +103,10 @@ public class NgSlimScrollPageConfigurator
 	 * @param component
 	 * @param options
 	 */
-	public static void applySlimScroll(ComponentHierarchyBase component, NgSlimScrollOptions options)
+	public static void applySlimScroll(IComponentHierarchyBase<?,?> component, NgSlimScrollOptions<?> options)
 	{
-		component.addAttribute("data-slim-scroll", null);
-		component.addAttribute("data-options", options.toString());
+		component.asAttributeBase().addAttribute("data-slim-scroll", null);
+		component.asAttributeBase().addAttribute("data-options", options.toString());
 	}
 
 	/**
@@ -107,9 +114,9 @@ public class NgSlimScrollPageConfigurator
 	 *
 	 * @param component
 	 */
-	public static void applySlimScroll(ComponentHierarchyBase component)
+	public static void applySlimScroll(IComponentHierarchyBase<?,?> component)
 	{
-		component.addAttribute("data-slim-scroll", null);
+		component.asAttributeBase().addAttribute("data-slim-scroll", null);
 	}
 
 	@NotNull

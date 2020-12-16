@@ -29,11 +29,6 @@ public class NgSlimScrollOptions<J extends NgSlimScrollOptions<J>>
 		extends JavaScriptPart<J>
 {
 
-	/**
-	 * Field serialVersionUID
-	 */
-
-
 	@Override
 	public String toString()
 	{

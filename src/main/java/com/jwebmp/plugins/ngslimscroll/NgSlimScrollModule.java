@@ -11,12 +11,6 @@ import com.jwebmp.core.base.angular.modules.AngularModuleBase;
 public class NgSlimScrollModule
 		extends AngularModuleBase<NgSlimScrollModule>
 {
-
-	/**
-	 * Field serialVersionUID
-	 */
-
-
 	/*
 	 * Constructs a new NgSlimScrollModule
 	 */
