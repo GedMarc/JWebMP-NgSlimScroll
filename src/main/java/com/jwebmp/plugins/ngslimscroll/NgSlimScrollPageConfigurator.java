@@ -121,7 +121,7 @@ public class NgSlimScrollPageConfigurator
 
 	@NotNull
 	@Override
-	public Page configure(Page page)
+	 public Page<?> configure(Page<?> page)
 	{
 		JQueryPageConfigurator.setRequired(true);
 		AngularPageConfigurator.setRequired(true);
