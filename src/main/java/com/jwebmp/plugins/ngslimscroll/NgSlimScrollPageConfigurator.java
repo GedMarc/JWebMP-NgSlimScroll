@@ -34,7 +34,7 @@ import jakarta.validation.constraints.NotNull;
  */
 @PluginInformation(pluginName = "NgSlimScroll",
 		pluginDescription = "Slim scroll is a replacement of default scrollbar provided by browsers on Windows. This library lets you design the scroll-bar by using simple css properties. It is created using javascript and css.",
-		pluginUniqueName = "jwebswing-ngslimscroll",
+		pluginUniqueName = "ngslimscroll",
 		pluginVersion = "1.3.8",
 		pluginCategories = "scrolling, ui,web ui, framework",
 		pluginSubtitle = "Slim scroll is a replacement of default scrollbar provided by browsers on Windows. This library lets you design the scroll-bar by using simple css properties. It is created using javascript and css.",
