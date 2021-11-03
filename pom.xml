@@ -11,7 +11,7 @@
 
     <artifactId>jwebmp-ng-slim-scroll</artifactId>
     <packaging>jar</packaging>
-
+    <version>0.0.0_0-SNAPSHOT</version>
     <name>NgSlimScroll</name>
     <description>The JWebSwing implementation for Angular Slim Scroll</description>
     <url>https://github.com/GedMarc/JWebSwing-NgSlimScroll</url>
