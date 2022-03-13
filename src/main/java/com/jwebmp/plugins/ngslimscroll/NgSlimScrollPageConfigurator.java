@@ -123,8 +123,8 @@ public class NgSlimScrollPageConfigurator
 	@Override
 	 public Page<?> configure(Page<?> page)
 	{
-		JQueryPageConfigurator.setRequired(true);
-		AngularPageConfigurator.setRequired(true);
+		
+		
 
 		page.getBody()
 		    .addJavaScriptReference(NgSlimScrollReferencePool.NgSlimScrollReference.getJavaScriptReference());
