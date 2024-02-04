@@ -5,7 +5,7 @@ module com.jwebmp.plugins.ngslimscroll {
 	exports com.jwebmp.plugins.ngslimscroll;
 	
 	requires com.jwebmp.core;
-	requires com.guicedee.logmaster;
+	
 	
 	requires jakarta.validation;
 	requires java.logging;
